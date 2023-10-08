@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: aqua;
+
+}
+ 
+.text{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: #0ecfff;
+}
+.calculator {
+    position: relative;
+    width: 340px;
+    border-radius: 20px;
+}
+
+.calculator .buttons {
+    position: relative;
+    display: grid;
+
+}
+
+.calculator .buttons #value {
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: #f4f6ff;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2em;
+    font-weight: 500;
+
+
+}
+
+.calculator .buttons span {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #0ecfff;
+    border: 2px solid #edf1f4;
+
+}
+
+.calculator .buttons span#clear {
+    color: #fff;
+    background-color: #da2626;
+    grid-column: span 2
+}
+
+   
+
+.calculator .buttons span#green,
+.calculator .buttons span#equal {
+    color: #fff;
+    background-color: green;
+}
+
+.dark .calculator .buttons #value {
+    background: #2e2e2e;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    font-size: 40px;
+    justify-content: end;
+    color: rgb(212, 185, 185);
+    box-shadow: inset 15px 15px 20px rgba(0, 0, 0, 0.5),
+        inset -15px -15px 2px rgba(255, 255, 255, 0.1)
+}
+
+.dark .calculator .buttons span {
+    color: eee;
+    color: seee;
+    border: 2px solid #555;
+    box-shadow: Sex Spa 190 rgba(0, 0, 0, 8.25), -5x-5px 10px rgba(255, 255, 255, 0.1);
+
+}
+
+.dark .calculator .buttons span:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 8, 9, 0.25), Inset -5px 5px 10px rgba(255, 255, 255, 0.1)
+}
+
+.dark .calculator .buttons span#clear,
+.dare .calculator .buttons span#plus,
+.dare .calculator .buttons span#equal {
+    border: solid 2px #333;
+}
+
+.dark .colculator .buttons .span#clear:active,
+.dark .colculator .buttons .span#equal:active,
+.dark .colculator .buttons .span#plus:active {
+    border: 2px solid #edf1f4;
+    box-shadow: inset 5px 5px 15px rgba(0, 5, 9, 1);
+}
+
+.dark {
+    background: #ffffff;
+}
+
+.dark .calculator {
+    background: #02140b;
+    border: 3PX solid rgb(8, 5, 0);
+    box-shadow: 15px 15px 20px rgba(8, 8, 8, 8.25), -15px -15px 20px rgba(255, 255, 255, 0.1);
+}
